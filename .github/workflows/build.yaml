@@ -16,7 +16,7 @@ jobs:
       run: |
         npm ci
         npm run build
-    - uses: actions/upload-atrifact@v3
+    - uses: actions/upload-artifact@v3
       with:
         name: boilerplate.css
         path: ./build/boilerplate.css
