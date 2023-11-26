@@ -542,13 +542,15 @@ h1,h2,h3,h4,h5,h6 {
 .page-archive {
     .archive-entries {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, 400px);
         gap: 1em 4em;
+        justify-content: center;
     }
     .archive-entry {
         background-color: $bg-light;
         padding: 1em;
-        height: calc(3/4 * 100%);
+        width: 400px;
+        height: 300px;
         margin-left: auto;
         margin-right: auto;
         line-height: 1.3;
